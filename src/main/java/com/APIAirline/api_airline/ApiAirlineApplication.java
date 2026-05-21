@@ -1,13 +1,13 @@
-package com.aerolineaAPI.taller_1;
+package com.APIAirline.api_airline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Taller1Application {
+public class ApiAirlineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Taller1Application.class, args);
+		SpringApplication.run(ApiAirlineApplication.class, args);
 	}
 
 }

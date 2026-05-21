@@ -1,10 +1,10 @@
-package com.aerolineaAPI.taller_1;
+package com.APIAirline.api_airline;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Taller1ApplicationTests {
+class ApiAirlineApplicationTests {
 
 	@Test
 	void contextLoads() {
