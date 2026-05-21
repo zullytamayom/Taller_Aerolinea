@@ -6,6 +6,15 @@ info:
 http:
   method: POST
   url: http://localhost:8080/pasajeros
+  body:
+    type: json
+    data: |-
+      {
+        "nombre":"maira",
+        "apellido":"Pinilla",
+        "documento":"1122213",
+        "email":"email@gmail.com"
+      }
   auth: inherit
 
 settings:

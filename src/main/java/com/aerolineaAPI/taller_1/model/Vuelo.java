@@ -50,7 +50,7 @@ public class Vuelo {
         return destino;
     }
 
-    public void setDestino(){
+    public void setDestino(String destino){
         this.destino = destino;
     }
 

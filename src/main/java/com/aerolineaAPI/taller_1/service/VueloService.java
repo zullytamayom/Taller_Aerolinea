@@ -19,6 +19,7 @@ public class VueloService {
     }
 
     public List<Vuelo> findAll(){
+
         return vueloRepository.findAll();
     }
     public Optional<Vuelo> findById(Long id){
@@ -26,6 +27,22 @@ public class VueloService {
     }
 
     public Vuelo save(Vuelo vuelo){
+
         return vueloRepository.save(vuelo);
+    }
+
+    public void deleteVuelo(Long id){
+        vueloRepository.deleteById(id);
+    }
+
+    public Vuelo updateVuelo(Vuelo vuelo, Long id){
+        Vuelo vueloActualizado = vueloRepository.findById(id).orElse(null);
+        if(vuelo == null) return null;
+        vueloActualizado.setEstadoVuelo(vueloActualizado.getEstadoVuelo());
+        vueloActualizado.setDestino(vueloActualizado.getDestino());
+        vueloActualizado.setOrigen(vueloActualizado.getOrigen());
+        vueloActualizado.setFechaHora(vueloActualizado.getFechaHora());
+        return vueloRepository.save(vueloActualizado);
+
     }
 }

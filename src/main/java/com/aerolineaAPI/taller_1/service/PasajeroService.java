@@ -10,7 +10,6 @@ import java.util.List;
 @Service
 public class PasajeroService {
 
-    @Autowired
     private final PasajeroRepository pasajeroRepository;
 
     public PasajeroService(PasajeroRepository pasajeroRepository) {
